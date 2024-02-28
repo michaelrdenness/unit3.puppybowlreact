@@ -1,12 +1,7 @@
 import axios from "axios"
 
-const BASE_URL = 'https://fsa-puppy-bowl.herokuapp.com/api/daxkerchner/players'
+const BASE_URL = 'https://fsa-puppy-bowl.herokuapp.com/api/michaelrdenness/players'
 
-// not using export default
-// we're just going to export multiple things
-// and no special default export
-
-// could do: export function getAllPlayers() {
 export const getAllPlayers = async () => {
   const { data } = await axios.get(BASE_URL)
   console.log('data', data)
